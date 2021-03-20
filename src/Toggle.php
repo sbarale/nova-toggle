@@ -14,14 +14,16 @@ class Toggle extends Boolean
         ]);
     }
 
-    public function onValue($label){
+    public function trueValue($label){
+        parent::trueValue($label);
         return $this->withMeta([
             'true_value' => $label,
         ]);
     }
 
 
-    public function offValue($label){
+    public function falseValue($label){
+        parent::falseValue($label);
         return $this->withMeta([
             'false_value' => $label,
         ]);
