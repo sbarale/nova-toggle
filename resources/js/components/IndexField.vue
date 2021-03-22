@@ -15,7 +15,7 @@
                 />
         </div>
         <span v-else
-            class="inline-block rounded-full w-4 h-4"
+            class="inline-block rounded-full w-2 h-2"
             :style="bgColor"
             />
         <span class="pl-2" v-if="label != null" >{{ label }}</span>
